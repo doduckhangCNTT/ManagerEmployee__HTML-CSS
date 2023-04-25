@@ -1,0 +1,327 @@
+.form-info-employee {
+}
+
+.info-employee {
+  background-color: #fff;
+  border-radius: var(--border-radius-primary);
+  /* margin: 10px; */
+  display: inline-block;
+  padding: 24px 24px 0 24px;
+}
+
+.icon-help-close {
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-help {
+  background: url("../../assets/ResourceTable/img/Sprites.64af8f61.svg")
+    no-repeat -732px -31px;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-close {
+  background: url("../../assets/ResourceTable/img/Sprites.64af8f61.svg")
+    no-repeat -1178px -362px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+/* <!-- Info employee header -- Start --> */
+.info-employee-header {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.info-employee-header-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.info-employee__accuracy {
+  display: flex;
+  column-gap: 10px;
+}
+
+.info-employee__accuracy-client {
+  display: flex;
+  column-gap: 10px;
+}
+
+.info-employee__accuracy-client--lable {
+}
+
+.info-employee__accuracy-supplier {
+  display: flex;
+  column-gap: 10px;
+}
+
+.info-employee__accuracy-supplier--lable {
+}
+/* <!-- Info employee header -- End --> */
+
+/* <!-- Info employee content -- Start --> */
+.info-employee-content {
+  margin-top: 24px;
+}
+
+.info-employee-content-place-first {
+  display: flex;
+  column-gap: 30px;
+}
+/* <!-- Info employee Form One -- Start --> */
+.info-employee-form-one {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.info-employee-form-one-idName {
+  display: flex;
+  column-gap: 15px;
+}
+
+.info-employee-form-one-id-employee {
+}
+
+.info-employee-form-one-name-employee {
+}
+
+.info-employee-form-one-unit {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 6px; */
+}
+
+.info-employee-form-one-unit .dropdown {
+  margin-top: 8px;
+}
+
+.info-employee-form-one-title {
+}
+
+/* === Handle Combobox === */
+.combobox {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.combobox-outline {
+  /* display: inline-block; */
+  margin-top: 8px;
+  outline: 1px solid #e0e0e0;
+  border-radius: var(--border-radius-primary);
+  width: 100%;
+}
+
+.border-right-none {
+  border-right: none !important;
+  width: 100%;
+}
+
+/* <!-- Info employee Form One -- End --> */
+
+/* <!-- Info employee Form Two -- Start --> */
+.info-employee-form-two {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.info-employee-form-two--dateofbirth-sex {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* .info-employee-form-two-dateofbirth {
+}
+
+.info-employee-form-two-dateofbirth input {
+  margin-top: 8px;
+  border: 1px solid var(--border-color-primary);
+  padding: 5px 7px;
+  border-radius: var(--border-radius-primary);
+  width: 100%;
+} */
+
+.info-employee-form-two-sex {
+}
+
+.info-employee-form-two-sex--list {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.info-employee-form-two-sex--list label {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+/* .info-employee-form-two-sex--list p {
+  margin-top: 2px;
+} */
+
+.info-employee-form-two-sex--list input {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #707070;
+}
+
+.info-employee-form-two-identification {
+  display: flex;
+  column-gap: 15px;
+}
+
+.info-employee-form-two-identification--number {
+}
+
+/* .info-employee-form-two-identification--created {
+}
+
+.info-employee-form-two-identification--created input {
+  margin-top: 8px;
+  border: 1px solid var(--border-color-primary);
+  padding: 5px 7px;
+  border-radius: var(--border-radius-primary);
+  width: 100%;
+  min-width: 200px;
+} */
+
+.info-employee-form-two-issued {
+}
+/* <!-- Info employee Form Two -- End --> */
+
+/* <!-- Info employee content -- End --> */
+
+/* <!-- Info employee Form Three -- Start --> */
+
+.info-employee-form-three {
+  margin-top: 20px;
+}
+
+/* <!-- Info employee Form Three -- End --> */
+
+/* <!-- Info employee Form Four -- Start --> */
+.info-employee-form-four {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 20px;
+}
+
+.info-employee-form-four--contact {
+  display: flex;
+  column-gap: 15px;
+}
+
+.info-employee-form-four--bank {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* <!-- Info employee Form Four -- End --> */
+.info-employee-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  border-top: 1px solid var(--border-color-primary);
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+}
+
+.info-employee-footer-btnCancel {
+  background-color: #fff;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: var(--border-radius-primary);
+  border-color: var(--border-color-primary);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.info-employee-footer-btnCancel:focus {
+  background-color: #ccc;
+}
+
+.info-employee-footer-btn {
+  display: flex;
+  column-gap: 12px;
+}
+
+.info-employee-footer-btn-keep {
+  background-color: #fff;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: var(--border-radius-primary);
+  border-color: var(--border-color-primary);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.info-employee-footer-btn-keep:focus {
+  background-color: #ccc;
+}
+
+.info-employee-footer-btnKeepAdd {
+  display: inline-block;
+  background-color: var(--background-color-primary);
+  border-radius: var(--border-radius-primary);
+  padding: 8px 19px;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-primary);
+  cursor: pointer;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-hover:hover {
+  background-color: var(--color-green-hover-primary) !important;
+}
+
+.btn-pressed:focus {
+  background-color: var(--color-green-pressed-primary) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon-require {
+  color: #e61d1d;
+}
+
+.form-group.invalid {
+  position: relative;
+}
+
+.form-group.invalid input {
+  border: 1px solid #e61d1d !important;
+  outline: none !important;
+}
+.form-group.invalid .form-message--error {
+  color: #e61d1d !important;
+  font-size: 12px;
+  margin-top: 8px;
+  display: none;
+  position: absolute;
+  top: 56px;
+}

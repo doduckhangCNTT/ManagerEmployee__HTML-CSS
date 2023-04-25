@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Table</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="list-employee">
+      <div class="navbar">
+        <div class="navbar__header">
+          <div class="navbar__header-icon">
+            <div class="navbar__header-icon-sprite"></div>
+          </div>
+          <div class="navbar__header-logo">
+            <div class="sprite-logo"></div>
+            <span class="">KẾ TOÁN</span>
+          </div>
+        </div>
+
+        <!-- Navbar information -- Start-- -->
+        <div class="navbar__items">
+          <div class="navbar__item-overview">
+            <div class="navbar__item-overview-icon"></div>
+            <div class="navbar__item-title">Tổng quan</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-price-icon"></div>
+            <div class="navbar__item-title">Tiền mặt</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-shopping-icon"></div>
+            <div class="navbar__item-title">Mua hàng</div>
+          </div>
+          <div class="navbar__item-overview">
+            <div class="navbar__item-overview-icon"></div>
+            <div class="navbar__item-title">Tổng quan</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-price-icon"></div>
+            <div class="navbar__item-title">Tiền mặt</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-shopping-icon"></div>
+            <div class="navbar__item-title">Mua hàng</div>
+          </div>
+          <div class="navbar__item-overview">
+            <div class="navbar__item-overview-icon"></div>
+            <div class="navbar__item-title">Tổng quan</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-price-icon"></div>
+            <div class="navbar__item-title">Tiền mặt</div>
+          </div>
+
+          <div class="navbar__item-overview">
+            <div class="navbar__item-shopping-icon"></div>
+            <div class="navbar__item-title">Mua hàng</div>
+          </div>
+        </div>
+        <!-- Navbar information -- End-- -->
+      </div>
+
+      <div class="container">
+        <!-- Header -- Start -- -->
+        <div class="header">
+          <div class="header__company">
+            <div class="header-icon--hamburger"></div>
+            <div class="header__company-info">
+              <!-- Combobox -->
+              <div class="dropdown width-300 border-none">
+                <div class="combobox-input">
+                  <input
+                    type="text"
+                    placeholder="CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DICH VỤ QUI PHÚC"
+                  />
+                  <div class="combobox-input__icon border-left-none">
+                    <div class="icon-combobox--arrow"></div>
+                  </div>
+                </div>
+                <ul class="options combobox-options--below">
+                  <li class="option">10</li>
+                  <li class="option">25</li>
+                  <li class="option">30</li>
+                  <li class="option">50</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal -- Start -- -->
+          <div class="header__personal">
+            <div class="header__notifications"></div>
+            <div class="header__personal-info">
+              <div class="header__personal-info-avatar"></div>
+              <p class="header__personal-info-username">User Name</p>
+            </div>
+          </div>
+        </div>
+        <!-- Header -- End -- -->
+
+        <div class="main">
+          <!-- Main top -- Start  -->
+          <div class="main__top">
+            <div class="main__top-subject">Nhân viên</div>
+            <button
+              id="btn-add-employee"
+              class="main__top-add-employee btn__primary btn-hover btn-pressed"
+            >
+              Thêm mới nhân viên
+            </button>
+
+            <!-- FORM ADD EMPLOYEE -->
+            <div id="form-employee" class="form-employee dialog-close hidden">
+              <div class="form-employee-wrapper">
+                <!-- <iframe src="./info-employee.html"></iframe> -->
+
+                <!-- UI FORM ADD EMPLOYEE -->
+                <form action="" class="form-info-employee">
+                  <div class="info-employee">
+                    <!-- <div class="icon-help-close">
+                      <div class="icon-help"></div>
+                      <div class="dialog-btn--close icon-close"></div>
+                    </div> -->
+                    <!-- Info employee header -- Start -->
+                    <div class="info-employee-header">
+                      <div class="info-employee-header-title">
+                        Thông tin nhân viên
+                      </div>
+
+                      <div class="icon-help-close">
+                        <!-- <div class="icon-help"></div> -->
+                        <div class="dialog-btn--close icon-close"></div>
+                      </div>
+                      <!-- <div
+                        id="info-employee__accuracy"
+                        class="info-employee__accuracy form-group"
+                      >
+                        <div class="info-employee__accuracy-client">
+                          <input
+                            name="info-employee"
+                            type="checkbox"
+                            value="customer"
+                          />
+                          <p class="info-employee__accuracy-client--lable">
+                            Là khách hàng
+                          </p>
+                        </div>
+  
+                        <div class="info-employee__accuracy-supplier">
+                          <input
+                            name="info-employee"
+                            type="checkbox"
+                            value="provider"
+                          />
+                          <p class="info-employee__accuracy-supplier--lable">
+                            Là nhà cung cấp
+                          </p>
+                        </div>
+  
+                        <small class="form-message--error"></small>
+                      </div> -->
+                    </div>
+                    <!-- Info employee header -- End -->
+
+                    <div class="info-employee-content">
+                      <div class="info-employee-content-place-first">
+                        <div class="info-employee-form-one">
+                          <div class="info-employee-form-one-idName">
+                            <div
+                              class="info-employee-form-one-id-employee form-group"
+                            >
+                              <label class="textfield__label"
+                                >Mã
+                                <!-- <span class="icon-require">
+                                  <label for="" title="Bắt buộc nhập">*</label>
+                                </span> -->
+                              </label>
+                              <input
+                                id="textfield_codeEmployee"
+                                class="textfield__input input-hover input-focus firstElement"
+                                type="text"
+                                field-label="Mã nhân viên"
+                                name="employeeCode"
+                                placeholder="Placeholder"
+                                tabindex="1"
+                                required
+                              />
+                              <small class="form-message--error"></small>
+                            </div>
+
+                            <div
+                              class="info-employee-form-one-name-employee form-group"
+                            >
+                              <label class="textfield__label"
+                                >Tên
+                                <!-- <span class="icon-require">*</span> -->
+                              </label>
+                              <input
+                                id="textfield_EmployeeName"
+                                class="textfield__input input-hover input-focus min-width-input"
+                                type="text"
+                                field-label="Tên nhân viên"
+                                name="fullname"
+                                placeholder="Nguyễn Ánh Bằng"
+                                tabindex="2"
+                                required
+                              />
+                              <small class="form-message--error"></small>
+                            </div>
+                          </div>
+
+                          <div
+                            id="info-employee-form-one-unit"
+                            class="info-employee-form-one-unit form-group"
+                          >
+                            <!-- Combobox -->
+                            <label class="textfield__label">Đơn vị</label>
+                            <div class="dropdown width-full">
+                              <div class="combobox-input">
+                                <input
+                                  type="text"
+                                  placeholder="Phòng nhân sự"
+                                  name="unit"
+                                />
+                                <div
+                                  class="combobox-input__icon border-left-none"
+                                >
+                                  <div class="icon-combobox--arrow"></div>
+                                </div>
+                              </div>
+                              <ul
+                                id="contentUnitCombobox"
+                                class="options combobox-options--below"
+                              >
+                                <!-- <li class="option">10</li>
+                                <li class="option">25</li>
+                                <li class="option">30</li>
+                                <li class="option">50</li> -->
+                              </ul>
+                            </div>
+                            <small class="form-message--error"></small>
+                          </div>
+
+                          <div class="info-employee-form-one-title form-group">
+                            <label class="textfield__label">Chức danh</label>
+                            <input
+                              id="textfield__title"
+                              class="textfield__input width-full input-hover input-focus"
+                              type="text"
+                              name="title"
+                              placeholder="Lễ tân chính"
+                              tabindex="4"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                        </div>
+
+                        <div class="info-employee-form-two">
+                          <div class="info-employee-form-two--dateofbirth-sex">
+                            <div class="datetime form-group">
+                              <label class="textfield__label">Ngày sinh </label>
+                              <input
+                                type="date"
+                                id="textfield__dateOfBirth"
+                                name="dateOfBirth"
+                                tabindex="5"
+                              />
+                              <!-- <small class="form-message--error"></small> -->
+                            </div>
+
+                            <div class="info-employee-form-two-sex form-group">
+                              <label class="textfield__label">Giới tính </label>
+                              <div class="info-employee-form-two-sex--list">
+                                <!-- <label class="">
+                                  <input
+                                    id="radio-male"
+                                    type="radio"
+                                    name="genre"
+                                    value="male"
+                                  />
+                                  Nam
+                                  <span class="checkmark"></span>
+                                </label> -->
+
+                                <label class="radio">
+                                  <input
+                                    type="radio"
+                                    name="genre"
+                                    value="male"
+                                  />
+                                  <p>Nam</p>
+                                  <span class="checkmark" tabindex="6"></span>
+                                </label>
+
+                                <label class="radio">
+                                  <input
+                                    type="radio"
+                                    name="genre"
+                                    value="female"
+                                  />
+                                  <p>Nữ</p>
+                                  <span class="checkmark" tabindex="7"></span>
+                                </label>
+
+                                <label class="radio">
+                                  <input
+                                    type="radio"
+                                    name="genre"
+                                    value="other"
+                                  />
+                                  <p>Other</p>
+                                  <span class="checkmark" tabindex="8"></span>
+                                </label>
+                              </div>
+                              <small class="form-message--error"></small>
+                            </div>
+                          </div>
+
+                          <div class="info-employee-form-two-identification">
+                            <div
+                              class="info-employee-form-two-identification--number form-group"
+                            >
+                              <label
+                                class="textfield__label"
+                                title="Chứng minh thư nhân dân"
+                                >Số CMND</label
+                              >
+                              <input
+                                id="textfield__peopleId"
+                                class="textfield__input min-width-300 input-hover input-focus"
+                                type="text"
+                                name="peopleId"
+                                placeholder="001202009382"
+                                tabindex="9"
+                              />
+                              <small class="form-message--error"></small>
+                            </div>
+                            <!-- <div
+                              class="info-employee-form-two-identification--created form-group"
+                            >
+                              <label class="textfield__label">Ngày cấp</label>
+                              <input
+                                type="date"
+                                id="textfield__dateRange"
+                                name="dateRange"
+                              />
+                              <small class="form-message--error"></small>
+                            </div> -->
+
+                            <div class="datetime form-group">
+                              <label class="textfield__label">Ngày cấp </label>
+                              <input
+                                class="width-full min-width-200"
+                                type="date"
+                                id="textfield__dateOfBirth"
+                                name="dateOfBirth"
+                                tabindex="10"
+                              />
+                              <!-- <small class="form-message--error"></small> -->
+                            </div>
+                          </div>
+
+                          <div class="info-employee-form-two-issued form-group">
+                            <label class="textfield__label">Nơi cấp</label>
+                            <input
+                              id="textfield__issuedBy"
+                              class="textfield__input width-full input-hover input-focus"
+                              type="text"
+                              name="issuedBy"
+                              placeholder="Hải Phòng"
+                              tabindex="11"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="info-employee-form-three form-group">
+                        <label class="textfield__label">Địa chỉ</label>
+                        <input
+                          id="textfield__address"
+                          class="textfield__input width-full input-hover input-focus"
+                          type="text"
+                          name="address"
+                          placeholder="146 Phạm Văn Chiêu"
+                          tabindex="12"
+                        />
+                        <small class="form-message--error"></small>
+                      </div>
+
+                      <div class="info-employee-form-four">
+                        <div class="info-employee-form-four--contact">
+                          <div
+                            class="info-employee-form-four-telephone--contact form-group"
+                          >
+                            <label
+                              class="textfield__label"
+                              title="Điện thoại di động"
+                              >ĐT di động</label
+                            >
+                            <input
+                              id="textfield__mobilePhone"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="mobilePhone"
+                              placeholder="0963579744"
+                              tabindex="13"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                          <div
+                            class="info-employee-form-four-telephoneDefault--contact form-group"
+                          >
+                            <label
+                              class="textfield__label"
+                              title="Điện thoại cố định"
+                              >ĐT cố định</label
+                            >
+                            <input
+                              id="textfield__landlinePhone"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="landlinePhone"
+                              placeholder="(764) 749-6478"
+                              tabindex="14"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                          <div
+                            class="info-employee-form-four-email--contact form-group"
+                          >
+                            <label class="textfield__label">Email</label>
+                            <input
+                              id="textfield__email"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="email"
+                              placeholder="procuon856@example.com"
+                              tabindex="15"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                        </div>
+
+                        <div class="info-employee-form-four--bank">
+                          <div
+                            class="info-employee-form-four-telephone--bank form-group"
+                          >
+                            <label class="textfield__label"
+                              >Tài khoản ngân hàng</label
+                            >
+                            <input
+                              id="textfield__bankAccount"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="bankAccount"
+                              placeholder="944147"
+                              tabindex="16"
+                            />
+
+                            <small class="form-message--error"></small>
+                          </div>
+                          <div
+                            class="info-employee-form-four-telephoneDefault--bank form-group"
+                          >
+                            <label class="textfield__label"
+                              >Tên ngân hàng</label
+                            >
+                            <input
+                              id="textfield__bankName"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="bankName"
+                              placeholder="Ngân hàng Vietcombank"
+                              tabindex="17"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                          <div
+                            class="info-employee-form-four-email--bank form-group"
+                          >
+                            <label class="textfield__label">Chi nhánh</label>
+                            <input
+                              id="textfield__branch"
+                              class="textfield__input input-hover input-focus min-width-input"
+                              type="text"
+                              name="branch"
+                              placeholder="Chi nhánh 6"
+                              tabindex="18"
+                            />
+                            <small class="form-message--error"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-employee-footer">
+                    <div class="info-employee-footer-btnCancel" tabindex="21">
+                      Hủy
+                    </div>
+                    <div class="info-employee-footer-btn">
+                      <div class="info-employee-footer-btn-keep" tabindex="20">
+                        Cất
+                      </div>
+                      <div
+                        id="btnSaveAndAdd"
+                        class="info-employee-footer-btnKeepAdd btn-hover btn-pressed"
+                        tabindex="19"
+                      >
+                        Cất và Thêm
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- DIALOG -->
+            <div id="dialog" class="dialog hidden dialog-close">
+              <div class="dialog-warning">
+                <div class="dialog-warning__notification">
+                  <div class="dialog-warning__icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="dialog-warning__content">
+                    Mỗi dialog nên thể hiện cho 1 hành động duy nhất, với 1
+                    chuỗi các hành động, nên xem xét việc dùng Popup với các
+                    bước riêng biệt.
+                  </div>
+                </div>
+                <div class="dialog-warning__notification--footer">
+                  <button
+                    id="btn-agree"
+                    class="dialog-btn--close dialog__button-ok btn__primary btn-hover btn-pressed"
+                  >
+                    Đồng ý
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Main top -- End -->
+
+          <div class="main__table">
+            <!-- Search & Refresh - Start -->
+            <div class="main__table-handleOnTable">
+              <div class="main__table-handleOnTable-search">
+                <div class="textfield-outline">
+                  <div class="textfield-validate input-hover">
+                    <input
+                      class="textfield-validate__placeholder input-hover"
+                      type="text"
+                      placeholder="Tìm theo mã, tên nhân viên"
+                    />
+                    <i class="textfield-validate__icon">
+                      <div class="textfield-validate__icon-search"></div>
+                    </i>
+                  </div>
+                </div>
+              </div>
+              <div class="main__table-handleOnTable-refresh"></div>
+            </div>
+            <!-- Search & Refresh - End -->
+
+            <!-- Table -->
+            <div class="main__table-info">
+              <table id="table-employee">
+                <!-- <tr style="position: fixed"> -->
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" />
+                    </th>
+                    <th>MÃ NHÂN VIÊN</th>
+                    <th>TÊN NHÂN VIÊN</th>
+                    <th>GIỚI TÍNH</th>
+                    <th>NGÀY SINH</th>
+                    <th>
+                      <label
+                        class="textfield__label"
+                        title="Chứng minh thư nhân dân"
+                        >Số CMND</label
+                      >
+                    </th>
+                    <th>CHỨC DANH</th>
+                    <th>TÊN ĐƠN VỊ</th>
+                    <!-- <th>SỐ TÀI KHOẢN</th>
+                    <th>TÊN NGÂN HÀNG</th>
+                    <th>CHI NHÁNH TÀI KHOẢN NGÂN HÀNG</th>
+                    <th colspan="2">CHỨC NĂNG</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="sticky-column">
+                      <input type="checkbox" />
+                    </td>
+                    <td class="sticky-column">MK15646</td>
+                    <td class="sticky-column">Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td class="table-employee-dateOfBirth">01/02/2000</td>
+                    <td>123456789</td>
+                    <td>Nhân Viên</td>
+                    <td>MISA</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                    <td colspan="2" class="table-employee__options visible">
+                      <div class="table-employee__options-edit">
+                        <button
+                          class="btn-custom-rounded btn-custom-rounded-custom"
+                        >
+                          <!-- <div class="btn-custom-edit"></div> -->
+                          <i class="fas fa-pen"></i>
+                        </button>
+                        <!-- Content Dropdown Icon -->
+                        <div class="main__table-info-icon-option-items hidden">
+                          <div class="main__table-info-icon-option-item">
+                            Nhân bản
+                          </div>
+                          <div class="main__table-info-icon-option-item">
+                            Xóa
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="btn-custom-rounded btn-custom-rounded-option"
+                      >
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                    <!-- <td></td> -->
+                  </tr>
+                  <tr>
+                    <td class="sticky-column">
+                      <input type="checkbox" />
+                    </td>
+                    <td class="sticky-column">MK15646</td>
+                    <td class="sticky-column">Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td class="table-employee-dateOfBirth">01/02/2000</td>
+                    <td>123456789</td>
+                    <td>Nhân Viên</td>
+                    <td>MISA</td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                    <td colspan="2" class="table-employee__options visible">
+                      <div class="table-employee__options-edit">
+                        <button
+                          class="btn-custom-rounded btn-custom-rounded-custom"
+                        >
+                          <!-- <div class="btn-custom-edit"></div> -->
+                          <i class="fas fa-pen"></i>
+                        </button>
+                        <!-- Content Dropdown Icon -->
+                        <div class="main__table-info-icon-option-items hidden">
+                          <div class="main__table-info-icon-option-item">
+                            Nhân bản
+                          </div>
+                          <div class="main__table-info-icon-option-item">
+                            Xóa
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="btn-custom-rounded btn-custom-rounded-option"
+                      >
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                    <!-- <td></td> -->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="main__footer">
+            <div class="main__footer-total-records">Tổng số: 1035 bản ghi</div>
+            <div class="main__footer-paging">
+              <div class="main__footer-paging-total-record-on-page">
+                <p class="number-records-text">Số bản ghi/trang:</p>
+                <!-- Combobox -->
+                <div class="dropdown width-76">
+                  <div class="combobox-input">
+                    <input type="text" placeholder="20" />
+                    <div class="combobox-input__icon border-left-none">
+                      <div class="icon-combobox--arrow"></div>
+                    </div>
+                  </div>
+                  <ul class="options combobox-options--above">
+                    <li class="option">10</li>
+                    <li class="option">25</li>
+                    <li class="option">30</li>
+                    <li class="option">50</li>
+                  </ul>
+                </div>
+                <span class="main__footer-quality-record">1-4 bản ghi </span>
+              </div>
+              <div class="main__footer-paging-number">
+                <span class="main__footer-paging-previous"></span>
+                <!-- <ul class="main__footer-paging-number-item">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>...</li>
+                  <li>8</li>
+                  <li>9</li>
+                </ul> -->
+                <span class="main__footer-paging-next"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function toggleCombobox() {
+    document.getElementById("dropdown-content").classList.toggle("show");
+  }
+
+  function toggleComboboxRecord() {
+    document.getElementById("combobox-recordOnPage").classList.toggle("show");
+  }
+</script>
+<script src="../js/page/empolyee.js"></script>
+<script src="../js/page/validate-form.js"></script>
+<script>
+  Validator({
+    form: "#form-employee", // Form muốn xử lí
+    formGroupSelector: ".form-group", // Thẻ bao bọc từng input
+    errorSelector: ".form-message--error", // Thẻ hiện thị lỗi
+    rules: [
+      Validator.isRequired("#textfield_codeEmployee"),
+      Validator.isRequired("#textfield_EmployeeName"),
+
+      // Validator.isRequired("#textfield__email"),
+      // Validator.isEmail("#textfield__email"),
+
+      // Validator.isRequired("#textfield__title"),
+      // Validator.isRequired("#textfield__issuedBy"),
+      // Validator.isRequired("#textfield__peopleId"),
+      // Validator.isRequired("#textfield__address"),
+
+      // Validator.isRequired("#textfield__mobilePhone"),
+      // Validator.isRequired("#textfield__landlinePhone"),
+
+      // Validator.isRequired("#textfield__bankAccount"),
+      // Validator.isRequired("#textfield__bankName"),
+      // Validator.isRequired("#textfield__branch"),
+
+      // Validator.isRequired("#textfield__dateOfBirth"),
+      // Validator.checkDateOfBirth("#textfield__dateOfBirth"),
+      // Validator.isRequired("#textfield__dateRange"),
+
+      // Validator.isRequired("#textfield__unit"),
+
+      // Validator.isRequired('input[name="genre"]'),
+      // Validator.isRequired('input[name="info-employee"]'),
+    ], // Thẻ input muốn validate
+    onSubmit: (value) => {
+      console.log("Value: ", value);
+    },
+  });
+</script>
+
+<script src="../js/page/tab-index.js"></script>
+<script src="../js/components/combobox.js"></script>
+<script src="../js/page/form-info-employee.js"></script>

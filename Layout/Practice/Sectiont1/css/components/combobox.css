@@ -1,0 +1,234 @@
+ul {
+  list-style: none;
+}
+
+body {
+  /* height: 100vh; */
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 70%,
+    rgb(243, 243, 243) 100%
+  );
+  /* position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; */
+}
+
+.dropdown {
+  width: 288px;
+  height: 36px;
+  background: white;
+  border-radius: 9px;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .dropdown {
+    width: 240px;
+  }
+}
+
+/* Xử lí arrow */
+/* .dropdown::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  z-index: 9999;
+  width: 12px;
+  height: 12px;
+  border: 2px solid grey;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  transition: all 0.3s linear;
+} */
+
+.icon-combobox--arrow {
+  background: url(../../assets/ResourceTable/img/Sprites.64af8f61.svg) no-repeat -1128px -363px;
+  width: 16px;
+  height: 16px;
+}
+
+.combobox-input {
+  display: flex;
+}
+
+.combobox-input__icon {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  padding: 13px 12px 6px 12px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.combobox-input input:hover {
+  background-color: #f6f6f6;
+}
+
+.combobox-input__icon:hover {
+  cursor: pointer;
+}
+
+.dropdown input {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-primary);
+  padding: 8px 0 9px 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  height: 36px;
+  border: 1px solid #e6e6e6;
+}
+
+.dropdown input:focus {
+  border: 1px solid var(--color-green-primary);
+}
+
+.dropdown .options {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  background: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
+  font-size: 20px;
+  overflow: hidden;
+  position: absolute;
+  transition: all 0.7s ease;
+  opacity: 0;
+  transform: translateY(-50px);
+  visibility: hidden;
+  background: #fff;
+  /* background: rgba(255, 255, 255, 0.55); */
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.dropdown .options .option {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 9px 8px;
+  height: 36px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: #1f1f1f;
+}
+
+/* Thêm điều gì đó vào cuối mỗi option */
+.dropdown .options .option:not(:last-of-type) {
+  /* margin-bottom: 8px; */
+}
+.dropdown .options .option:hover {
+  color: #1f1f1f;
+  background: rgba(80, 184, 60, 0.1);
+}
+.dropdown.opened .options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown.opened::before {
+  transform: rotate(-225deg);
+  top: 14px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.6;
+}
+.circle.one {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(
+    45deg,
+    rgb(42, 179, 248) 0%,
+    rgb(91, 197, 250) 100%
+  );
+  top: -120px;
+  left: -80px;
+  z-index: -1;
+  box-shadow: 0 10px 25px rgba(42, 179, 248, 0.4);
+}
+@media (max-width: 575px) {
+  .circle.one {
+    width: 160px;
+    height: 160px;
+    left: -40px;
+  }
+}
+@media (max-width: 400px) {
+  .circle.one {
+    display: none;
+  }
+}
+
+.jssecrets {
+  font-weight: 500;
+  text-decoration: none !important;
+  font-family: "Urbanist";
+  padding: 16px;
+  background: #ffc805;
+  color: #000000;
+  font-size: 1.2em;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(184, 144, 0, 0.1882352941),
+    0px 8px 24px rgba(184, 144, 0, 0.3764705882);
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  transition: all 0.3s;
+}
+.jssecrets:hover {
+  transform: translateY(-4px);
+}
+
+/* Align size/position... --important-- */
+.width-76 {
+  width: 76px !important;
+}
+
+.width-300 {
+  width: 480px !important;
+}
+
+.width-full {
+  width: 100% !important;
+}
+
+.border-none {
+  border: none !important;
+}
+.border-none input {
+  border: none !important;
+}
+
+.combobox-options--above {
+  bottom: 36px !important;
+  z-index: 1;
+}
+
+.combobox-options--below {
+  top: 36px !important;
+  z-index: 10;
+}
+
+.border-left-none {
+  border-left: none !important;
+}

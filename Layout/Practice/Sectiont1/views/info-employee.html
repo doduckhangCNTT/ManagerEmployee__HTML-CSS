@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="info-employee">
+      <div class="icon-help-close">X</div>
+
+      <!-- Info employee header -- Start -->
+      <div class="info-employee-header">
+        <div class="info-employee-header-title">Thông tin nhân viên</div>
+        <div class="info-employee__accuracy">
+          <div class="info-employee__accuracy-client">
+            <input type="checkbox" />
+            <p class="info-employee__accuracy-client--lable">Là khách hàng</p>
+          </div>
+
+          <div class="info-employee__accuracy-supplier">
+            <input type="checkbox" />
+            <p class="info-employee__accuracy-supplier--lable">
+              Là nhà cung cấp
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Info employee header -- End -->
+
+      <div class="info-employee-content">
+        <div class="info-employee-content-place-first">
+          <div class="info-employee-form-one">
+            <div class="info-employee-form-one-idName">
+              <div class="info-employee-form-one-id-employee">
+                <label class="textfield__label">Mã</label>
+                <input
+                  class="textfield__input input-hover input-focus"
+                  type="text"
+                  name="input"
+                  placeholder="Placeholder"
+                />
+              </div>
+              <div class="info-employee-form-one-name-employee">
+                <label class="textfield__label">Tên</label>
+                <input
+                  class="textfield__input input-hover input-focus"
+                  type="text"
+                  name="input"
+                  placeholder="Placeholder"
+                />
+              </div>
+            </div>
+
+            <div class="info-employee-form-one-unit">
+              <!-- Combobox -->
+              <label class="textfield__label">Đơn vị</label>
+              <div class="combobox">
+                <div class="combobox-outline">
+                  <div class="combobox-validate input-hover">
+                    <input
+                      class="combobox-validate__placeholder border-right-none input-hover"
+                      type="text"
+                      placeholder="Phòng nhân sự"
+                    />
+                    <i
+                      onclick="toggleCombobox()"
+                      class="combobox-validate__icon"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </i>
+                  </div>
+                </div>
+                <div id="dropdown-content" class="combobox__content">
+                  <div class="combobox__content-val">
+                    <p>- Chọn giá trị -</p>
+                  </div>
+                  <div class="combobox__content-val">
+                    <p>Hà Nội</p>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                  <div class="combobox__content-val">TP.Hồ Chí Minh</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-employee-form-one-title">
+              <label class="textfield__label">Chức danh</label>
+              <input
+                class="textfield__input width-full input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Lễ tân chính"
+              />
+            </div>
+          </div>
+
+          <div class="info-employee-form-two">
+            <div class="info-employee-form-two--dateofbirth-sex">
+              <div class="info-employee-form-two-dateofbirth">
+                <label class="textfield__label">Ngày sinh </label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+              <div class="info-employee-form-two-sex">
+                <label class="textfield__label">Giới tính </label>
+                <div class="info-employee-form-two-sex--list">
+                  <label class="">
+                    <input type="radio" checked="checked" name="radio" />
+                    Nam
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="">
+                    <input type="radio" checked="checked" name="radio" />
+                    Nữ
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="">
+                    <input type="radio" checked="checked" name="radio" />
+                    Other
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-employee-form-two-identification">
+              <div class="info-employee-form-two-identification--number">
+                <label class="textfield__label" title="Chứng minh nhân dân"
+                  >Số CMND</label
+                >
+                <input
+                  class="textfield__input min-width-300 input-hover input-focus"
+                  type="text"
+                  name="input"
+                  placeholder="001202009382"
+                />
+              </div>
+              <div class="info-employee-form-two-identification--created">
+                <label class="textfield__label">Ngày cấp</label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+            </div>
+
+            <div class="info-employee-form-two-issued">
+              <label class="textfield__label">Nơi cấp</label>
+              <input
+                class="textfield__input width-full input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="info-employee-form-three">
+          <label class="textfield__label">Địa chỉ</label>
+          <input
+            class="textfield__input width-full input-hover input-focus"
+            type="text"
+            name="input"
+            placeholder="Placeholder"
+          />
+        </div>
+
+        <div class="info-employee-form-four">
+          <div class="info-employee-form-four--contact">
+            <div class="info-employee-form-four-telephone--contact">
+              <label class="textfield__label">ĐT di động</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="info-employee-form-four-telephoneDefault--contact">
+              <label class="textfield__label">ĐT cố định</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="info-employee-form-four-email--contact">
+              <label class="textfield__label">Email</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+
+          <div class="info-employee-form-four--bank">
+            <div class="info-employee-form-four-telephone--bank">
+              <label class="textfield__label">Tài khoản ngân hàng</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="info-employee-form-four-telephoneDefault--bank">
+              <label class="textfield__label">Tên ngân hàng</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="info-employee-form-four-email--bank">
+              <label class="textfield__label">Chi nhánh</label>
+              <input
+                class="textfield__input input-hover input-focus"
+                type="text"
+                name="input"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-employee-footer">
+        <div class="info-employee-footer-btnCancel">Hủy</div>
+        <div class="info-employee-footer-btn">
+          <div class="info-employee-footer-btn-keep">Cất</div>
+          <div class="info-employee-footer-btnKeepAdd">Cất và Thêm</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

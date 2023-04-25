@@ -1,0 +1,43 @@
+.btn-hover:hover {
+  background-color: var(--color-green-hover-primary) !important;
+}
+
+.btn-pressed:focus {
+  background-color: var(--color-green-pressed-primary) !important;
+}
+
+.btn__primary {
+  display: inline-block;
+  height: 36px;
+  background-color: var(--background-color-primary);
+  border-radius: var(--border-radius-primary);
+  padding: 8px 19px;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-primary);
+}
+
+/* Button custom rounded */
+.btn-custom-rounded {
+  border: 0;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  box-shadow: 0px 1px 12px #0000003f;
+}
+
+.btn-custom-rounded:hover {
+  opacity: 0.8;
+}
+
+.btn-custom-rounded-custom,
+.btn-custom-rounded-option {
+  cursor: pointer;
+}
+
+.btn-custom-edit {
+  background: url("../../assets/ResourceTable/img/Sprites.64af8f61.svg")
+    no-repeat -416px -312px;
+  width: 16px;
+  height: 16px;
+}
